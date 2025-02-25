@@ -60,7 +60,7 @@ int main() {
     // Imprime a primeira carta de acordo com os parâmetros
     printf("Carta 01: \n");
     printf("Estado: %c\n", estado1);
-    printf("Código da Carta: %c %s\n", estado1, codigoCarta1);  
+    printf("Código da Carta: %c%s\n", estado1, codigoCarta1);  
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
@@ -71,7 +71,7 @@ int main() {
     // Imprime a segunda carta de acordo com os parâmetros
     printf("Carta 02: \n");
     printf("Estado: %c\n", estado2);
-    printf("Código da Carta: %c %s\n", estado2, codigoCarta2); 
+    printf("Código da Carta: %c%s\n", estado2, codigoCarta2); 
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
