@@ -65,7 +65,7 @@ int main() {
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Pontos Turísticos: %c%d\n", pontosTuristicos1);
     printf("\n");
 
     // Imprime a segunda carta de acordo com os parâmetros
@@ -76,7 +76,7 @@ int main() {
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Pontos Turísticos: %c%d\n", pontosTuristicos2);
     printf("\n");
 
     return 0;  // Finaliza o programa
