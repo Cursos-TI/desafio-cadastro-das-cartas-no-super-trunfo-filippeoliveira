@@ -42,8 +42,7 @@ int main() {
     printf("Digite a quantidade de pontos turísticos desta cidade: \n");
     scanf(" %d", &pontosTuristicos1);
 
-    pib1*1e9;
- 
+     
     // Cadastro da segunda carta
     // Declaração de variáveis
     char estado2;
@@ -79,8 +78,7 @@ int main() {
     printf("Digite a quantidade de pontos turísticos desta cidade: \n");
     scanf(" %d", &pontosTuristicos2);
 
-    pib2*1e9;
-    
+       
 
     // Imprime a primeira carta de acordo com os parâmetros
     printf("Carta 01: \n");
