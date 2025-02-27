@@ -1,5 +1,5 @@
-//Inclui a biblioteca padrão de entrada e saída
-#include <stdio.h>
+#include <stdio.h> //Inclui a biblioteca padrão de entrada e saída
+#include <ctype.h>  // Inclui a biblioteca para manipulação de caracteres
 
 // Método principal, o que inicia o sistema
 int main() {
@@ -15,9 +15,13 @@ int main() {
     float pib1;
     int pontosTuristicos1;
 
+   
+    
+
     printf("Vamos para a primeira carta: \n");
     printf("Digite uma Letra: \n");
     scanf(" %c", &estado1);  // Espaço antes de %c para consumir o caractere de nova linha
+    estado1 = toupper(estado1);  // Converte o caractere para maiúsculo
     printf("Digite o numero de 1 a 4 começando com 0: \n");
     scanf("%s", codigoCarta1);  // Leitura do código da carta corretamente (sem espaços)
     printf("Digite o nome da cidade: \n");
@@ -44,6 +48,7 @@ int main() {
     printf("Vamos para a segunda carta: \n");
     printf("Digite uma Letra: \n");
     scanf(" %c", &estado2);  // Espaço antes de %c para consumir o caractere de nova linha
+    estado2 = toupper(estado2);  // Converte o caractere para maiúsculo
     printf("Digite o numero de 1 a 4 começando com 0: \n");
     scanf("%s", codigoCarta2);  // Leitura do código da carta corretamente (sem espaços)
     printf("Digite o nome da cidade: \n");
