@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-
+ 
 int main() {
     printf("Vamos criar as cartas para um jogo? Digite as informações solicitadas abaixo:\n");
     
