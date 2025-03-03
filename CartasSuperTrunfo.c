@@ -10,6 +10,7 @@ int main() {
     int pontosTuristicos1;
     float area1, superPoder1;
     double pib1;
+    int escolha;
 
     printf("\nVamos para a primeira carta:\n");
 
@@ -86,6 +87,7 @@ int main() {
     printf("PIB per Capita: Carta %d venceu (%d)\n", pibPerCapita1 > pibPerCapita2 ? 1 : 2, pibPerCapita1 > pibPerCapita2);
     printf("Super Poder: Carta %d venceu (%d)\n", superPoder1 > superPoder2 ? 1 : 2, superPoder1 > superPoder2);
     printf("\n");
+    
     
     if(densidade1<densidade2){
         printf("Carta 1 venceu por densidade populacional\n");
