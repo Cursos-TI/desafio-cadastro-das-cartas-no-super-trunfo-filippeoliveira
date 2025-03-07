@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
+#include "SuperT.h"
  
-int main() {
+    void supertrunfo() {
     printf("Vamos criar as cartas para um jogo? Digite as informações solicitadas abaixo:\n");
     
     // Cadastro da primeira carta
@@ -10,8 +11,7 @@ int main() {
     int pontosTuristicos1;
     float area1, superPoder1;
     double pib1;
-    int escolha;
-
+    
     printf("\nVamos para a primeira carta:\n");
 
     printf("Digite uma Letra:\n");
@@ -96,6 +96,5 @@ int main() {
     } else {
         printf("Carta 2 venceu por densidade populacional\n");
     }
-
-    return 0;
+  supertrunfo();
 }
