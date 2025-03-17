@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <locale.h>
 #include "SuperT.h"
  
 int main() {
-   
-  
+     
     printf(" ---------------------------------------------------------------------------------- \n");
     printf("| Vamos Jogar um jogo? O nome dele é Super Trunfo, digite 1 para sim e 2 para não  |\n");
     printf(" ---------------------------------------------------------------------------------- \n");
@@ -21,7 +21,8 @@ int main() {
              case 1:
                 printf("Vamos começar !\n");
                 supertrunfo();
-                break;              
+                break;
+                                             
              case 2:
                 printf("Até a próxima!\n");
                 break;
@@ -31,6 +32,7 @@ int main() {
             }
            
             system("pause"); // Pausa a execução até o usuário pressionar uma tecla
-            return 0;
+            return 0; ;
 
 }
+
