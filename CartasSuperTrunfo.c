@@ -19,7 +19,7 @@
     estado1 = toupper(estado1);
 
     printf("Digite o número de 1 a 4 começando com 0:\n");
-    scanf("%s", codigoCarta1);
+    scanf("%s"%c", codigoCarta1,estado1);
 
     printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]" , nomeCidade1);
