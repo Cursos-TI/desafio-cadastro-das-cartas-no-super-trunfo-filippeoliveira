@@ -1,23 +1,28 @@
 {
-    "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compilar C",
-            "type": "shell",
-            "command": "gcc",
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe arquivo de build ativo",
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
             "args": [
-                "-Wall",
-                "-finput-charset=UTF-8",
-                "-fexec-charset=CP850",
+                "-fdiagnostics-color=always",
+                "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": "$gcc"
+            "detail": "Tarefa gerada pelo Depurador."
         }
-    ]
+    ],
+    "version": "2.0.0"
 }

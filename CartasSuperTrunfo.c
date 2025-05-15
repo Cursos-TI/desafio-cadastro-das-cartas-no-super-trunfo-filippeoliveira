@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "SuperT.h"
  
-    void supertrunfo() {
+int main() {
     printf("Vamos criar as cartas para um jogo? Digite as informações solicitadas abaixo:\n");
     
     // Cadastro da primeira carta
@@ -11,7 +10,8 @@
     int pontosTuristicos1;
     float area1, superPoder1;
     double pib1;
-    
+    int escolha;
+
     printf("\nVamos para a primeira carta:\n");
 
     printf("Digite uma Letra:\n");
@@ -19,7 +19,7 @@
     estado1 = toupper(estado1);
 
     printf("Digite o número de 1 a 4 começando com 0:\n");
-    scanf("%s %c", codigoCarta1,estado1);
+    scanf("%s", codigoCarta1);
 
     printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]" , nomeCidade1);
@@ -55,19 +55,19 @@
     estado2 = toupper(estado2);
 
     printf("Digite o número de 1 a 4 começando com 0:\n");
-    scanf("%s", codigoCarta2);
+    scanf(" %s", codigoCarta2);
 
     printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]" , nomeCidade2);
 
     printf("Digite a população desta cidade:\n");
-    scanf("%lu", &populacao2);
+    scanf(" %lu", &populacao2);
 
     printf("Digite a área desta cidade:\n");
-    scanf("%f", &area2);
+    scanf(" %f", &area2);
 
     printf("Digite o PIB desta cidade (em bilhões, ex: 699.28):\n");
-    scanf("%lf", &pib2);
+    scanf(" %lf", &pib2);
     pib2 *= 1e9;
 
     printf("Digite a quantidade de pontos turísticos desta cidade:\n");
@@ -96,5 +96,6 @@
     } else {
         printf("Carta 2 venceu por densidade populacional\n");
     }
-  supertrunfo();
+
+    return 0;
 }
